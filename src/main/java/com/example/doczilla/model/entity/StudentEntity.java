@@ -1,11 +1,12 @@
-package com.example.doczilla.model.dto;
+package com.example.doczilla.model.entity;
 
-import lombok.Data;
-
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.Date;
 
-@Data
-public class StudentDto {
+@Entity
+public class StudentEntity {
+    @Id
     private Long id;
 
     private String name;
